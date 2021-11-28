@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./nav.css";
 
 const Nav = () => {
@@ -11,8 +11,15 @@ const Nav = () => {
       handleShow(false);
     }
   };
+
+  useEffect(() => {
+    window.addEventListener("scroll", transitionNavBar);
+    // Cleaning return in useEffect hook
+    return () => window.removeEventListener("scroll", transitionNavBar);
+  }, []);
   return (
-    <div className="nav nav_black">
+    // Check here why I have the black background
+    <div className={`nav ${show && " nav_black"}`}>
       <div className="nav_contents">
         <img
           className="nav_logo"
