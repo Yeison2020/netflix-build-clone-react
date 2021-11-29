@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Nav from "./Nav";
 import Banner from "./Banner";
 import Row from "./Row";
@@ -10,9 +10,11 @@ const HomeScreen = () => {
       <Nav />
       <Banner />
       <Row
-        title="  NETFLIX ORGINALS"
+        title="NETFLIX ORGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
+        isLargeRow={true}
       />
+      <Row title="Trending now" fetchUrl={requests.fetchTreding} />
       <Row title="Top Rated" fetchUrl={requests.fetchTopRated} />
       <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
       <Row title="Comedy Movies" fetchUrl={requests.fetchComedyMovies} />
