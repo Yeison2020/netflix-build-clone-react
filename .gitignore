@@ -1,5 +1,5 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-KEY_MOVIES = df096ea35ac4428bc111a12ba1cbc1d6
+
 # dependencies
 /node_modules
 /.pnp
