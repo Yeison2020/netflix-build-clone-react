@@ -1,8 +1,8 @@
 import React from "react";
-import Nav from "./Nav";
-import Banner from "./Banner";
-import Row from "./Row";
-import requests from "./Resquest";
+import Nav from "../Nav";
+import Banner from "../Banner";
+import Row from "../Row";
+import requests from "../Resquest";
 
 const HomeScreen = () => {
   return (
@@ -11,7 +11,7 @@ const HomeScreen = () => {
       <Banner />
       <Row
         title="NETFLIX ORGINALS"
-        fetchUrl={requests.fetchNetflixOriginals}
+        fetchUrl={requests.fetchComedyMovies}
         isLargeRow={true}
       />
       <Row title="Trending now" fetchUrl={requests.fetchTreding} />
