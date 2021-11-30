@@ -55,7 +55,12 @@
   z-index: 1;
   color: #fff;
   padding: 20px;
+  left: 0;
+  right: 0;
 }
+/* Important note the left: 0 and right: 0 just center everything in the logScreen Body 
+check this out and do your own research */
+
 .loginScreen_body > h1 {
   font-size: 2.5rem;
   margin-bottom: 20px;
